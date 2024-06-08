@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Desconto</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Atividade de Sábado - Calculadora de Descontos</h1>
+    </header>
+
+    <div class="form">
+        <input type="text" id="produto" placeholder="Nome do Produto">
+        <input type="number" id="valor" step="0.01" placeholder="Valor Original">
+        <input type="number" id="percento" step="0.01" placeholder="Percentual de Desconto" min="0" max="100">
+
+        <div class="botao">
+            <button id="calcula" onclick="pegarValor()">Calcular</button>
+            <button id="reset" onclick="limpar()">Limpar</button>
+        </div>
+
+    </div>
+
+    <div class="form">
+        <input type="text" id="produtoRes" placeholder="Nome do Produto" disabled>
+        <input type="text" id="valorDes" placeholder="Valor de Desconto" disabled>
+        <input type="text" id="valorFinal" placeholder="Valor Final" disabled>
+
+        <div class="botao">
+            <button id="calcula" onclick="limparRes()">Reiniciar Cálculo</button>
+        </div>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+
+</body>
+</html>
